@@ -71,3 +71,4 @@ jobs:
           name: ${{ matrix.app == 'apps/customer' && 'customer-app-release' || 'driver-app-release' }}
           path: ${{ matrix.app }}/build/app/outputs/flutter-apk/app-release.apk
           retention-days: 7
+

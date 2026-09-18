@@ -69,3 +69,4 @@ jobs:
       - name: Run Tests
         working-directory: ${{ matrix.app }}
         run: flutter test
+

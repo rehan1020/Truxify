@@ -2,6 +2,11 @@ name: Truxify CI
 
 on:
   pull_request:
+    paths:
+      - 'blockchain/**'
+      - 'apps/**'
+      - 'ml/**'
+      - 'backend/ml/**'
   push:
     branches:
       - main
@@ -232,4 +237,5 @@ jobs:
 
       - name: Check for Redis/Upstash credentials in Flutter source
         run: bash scripts/check-no-client-credentials.sh
+
 
